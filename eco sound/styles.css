@@ -1,0 +1,162 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Marmelad', sans-serif;
+    width: 100%;
+    height: 100%;
+
+  }
+body {
+   background-image: url(img/forest.jpg);
+}
+  header {
+    background: rgba(0, 0, 0, 0.614);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 80px;
+   z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+width: 100%;
+
+
+  }
+#logo {
+    width: 90px;
+    cursor: pointer;
+}
+
+#nav {
+  display: flex;
+}
+nav a {
+    margin: 0 20px 20px 0;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+padding-right: 40px;}
+
+    nav a.active {
+
+        color: #BEB565;
+      }
+
+  nav a:hover {
+    color: #BEB565;
+    font-size: 24px;
+  }
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  position: relative;
+
+  }
+  .bar {
+    background-color: #ffffff;
+    height: 4px;
+    margin: 3px 0;
+    width: 45px;
+  }
+  main {
+    width: 100%;
+       width: 100%;
+  height: 100vh;
+  z-index: 50;
+
+  }
+
+  #player {
+
+
+    display: flex;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  }
+
+
+  #player img:hover {
+    width: 90px;
+
+  }
+  footer {
+    background: rgba(0, 0, 0, 0.603);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 90px;
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  }
+  #right img {
+    height: 70px;
+    margin: 40px;
+  }
+  #right img:hover {
+    opacity: 70%;
+  }
+  #left a,
+  #left span {
+    text-decoration: none;
+    font-size: 28px;
+ color: white;
+ margin-left: 20px;
+
+  }
+  #left a:hover {
+    color:  #BEB565;
+  }
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(5.5px) rotate(45deg);
+  }
+
+  .menu-toggle.active .bar:nth-child(2) {
+    transform: translateY(-5.5px) rotate(-45deg);
+  }
+  @media screen and (max-width: 925px) {
+
+    .menu-toggle {
+      display:  flex;
+      margin-right: 50px;
+    }
+
+
+    #nav {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      text-align: right;
+      justify-content: end;
+        width: 50%;
+      position: fixed;
+      top: 20%;
+      left: 60%;
+      right: 0%;
+
+      background-color: rgba(0, 0, 0, 0.605);
+      z-index: 100;
+    }
+
+    #nav.active {
+      display: flex;
+    }
+
+  }
