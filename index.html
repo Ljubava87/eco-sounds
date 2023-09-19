@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аудиоплеер</title>
+  <link rel="icon" href="svg/favicon.ico" type="image/svg+xml">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="svg/logo.svg" id="logo" alt="Logo">
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+
+    </div>
+    <nav id="nav">
+        <a href="#" data-bird="forest" class="active"></a>
+        <a href="#" data-bird="solovey">Соловей</a>
+      <a href="#" data-bird="drozd">Дрозд</a>
+      <a href="#" data-bird="zarynka">Малиновка</a>
+      <a href="#" data-bird="javoronok">Жаворонок</a>
+      <a href="#" data-bird="slavka">Славка</a>
+    </nav>
+  </header>
+  <main>
+    <div id="player">
+      <img src="svg/play.svg" id="playPause" />
+      <audio id="audio" src="sound/forest.mp3"></audio>
+    </div>
+  </main>
+
+
+  <footer>
+    <div id="left">
+      <span>&copy; 2023 <a href="https://github.com/Ljubava87" target="_blank">Ljubava87</a></span>
+    </div>
+    <div id="right">
+      <a href="https://rs.school/js-stage0/" target="_blank"><img src="svg/rss.svg"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
